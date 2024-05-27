@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Blocksquawk',
   author: 'DFI1',
   headerTitle: 'Blocksquawk',
-  description: 'Mining qubits',
+  description: 'Blockchain insights for classical and quantum eras.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blocksquawk.vercel.app',
