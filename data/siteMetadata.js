@@ -7,7 +7,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blocksquawk.vercel.app',
-  siteRepo: 'https://github.com/the-blockchain-company/blocksquawk'
+  siteRepo: 'https://github.com/the-blockchain-company/blocksquawk',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
