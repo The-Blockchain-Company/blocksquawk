@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           <Link href="https://github.com/DeFi-1">
-            DFI1
+            `DFI1`
           </Link>
         </div>
       </div>
