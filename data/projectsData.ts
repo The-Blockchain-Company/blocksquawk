@@ -7,20 +7,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
+    title: 'DeFi One',
+    description: `Engineering sustainable enterprise usability for public blockchain technology into the quantum era `,
     imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    href: 'https://www.defione.io',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
+    title: 'Quantum One DAO',
+    description: `The chain-agnostic DAO for the post quantum era `,
     imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    href: 'https://quantumone.io',
   },
 ]
 
