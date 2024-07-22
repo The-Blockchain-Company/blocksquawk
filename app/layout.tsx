@@ -82,8 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Header />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
-
-`<Script 
+` <Script 
     src="https://giscus.app/client.js"
     data-repo="The-Blockchain-Company/           blocksquawk"
     data-repo-id="R_kgDOLjDLrA"
@@ -99,8 +98,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     data-loading="lazy"
     crossOrigin="anonymous"
     async
-        />
-              <Footer />
+        /> `
+            <Footer />
             </div>
           </SectionContainer>
         </ThemeProviders>
