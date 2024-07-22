@@ -95,8 +95,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         data-theme="preferred_color_scheme"
         data-lang="en"
         data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+        crossOrigin="anonymous"
+        async
         />
               <Footer />
             </div>
