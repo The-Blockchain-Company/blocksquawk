@@ -78,7 +78,7 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'quantumone.b-cdn.net',
           port: '',
-          pathname: '/**',
+          pathname: '/*',
         },
       ],
     },
