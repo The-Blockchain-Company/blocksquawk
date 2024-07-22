@@ -1,6 +1,6 @@
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
-
+import Script from 'next/script'
 import { Space_Grotesk } from 'next/font/google'
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
@@ -82,6 +82,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Header />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
+<Script src="https://giscus.app/client.js"
+        data-repo="The-Blockchain-Company/blocksquawk"
+        data-repo-id="R_kgDOLjDLrA"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOLjDLrM4ChE_g"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        />
               <Footer />
             </div>
           </SectionContainer>
