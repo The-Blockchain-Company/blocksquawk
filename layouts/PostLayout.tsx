@@ -9,8 +9,6 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import { CommentsProps } from 'pliny/comments'
-import Script from 'next/script'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -26,13 +24,12 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
 interface LayoutProps {
   content: CoreContent<Blog>
   authorDetails: CoreContent<Authors>[]
-  comments: CommentsProps
   next?: { path: string; title: string }
   prev?: { path: string; title: string }
   children: ReactNode
 }
 
-export default function PostLayout({ content, comments, authorDetails, next, prev, children }: LayoutProps) {
+export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
   const { filePath, path, slug, date, title, tags } = content
   const basePath = path.split('/')[0]
 
@@ -103,14 +100,11 @@ export default function PostLayout({ content, comments, authorDetails, next, pre
                 {` • `}
                 <Link href={editUrl(filePath)}>View on GitHub</Link>
               </div>
-              
               {siteMetadata.comments && (
-                
                 <div
                   className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 giscus"
                   id="comment"
                 >
-                 
                   <Comments slug={slug} />
                 </div>
               )}
