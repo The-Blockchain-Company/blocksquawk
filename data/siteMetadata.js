@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'inquire@quantumone.io',
-  github: 'https://github.com/Defi-1',
+  github: 'https://github.com/The-Blockchain-Company',
   twitter: 'https://twitter.com/dfione',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
