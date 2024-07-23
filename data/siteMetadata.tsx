@@ -1,7 +1,6 @@
-/** @type {import("pliny/config").PlinyConfig } */
-import type { Metadata } from 'next' 
+/** @type {import("pliny/config").PlinyConfig } */ 
 
-const siteMetadata: Metadata = {
+const siteMetadata = {
   title: 'Blocksquawk',
   author: 'DFI1',
   headerTitle: 'Blocksquawk',
