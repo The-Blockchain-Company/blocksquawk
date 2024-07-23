@@ -9,6 +9,8 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { CommentsProps } from 'pliny/comments'
+import Script from 'next/script'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -24,12 +26,13 @@ const postDateTemplate: Intl.DateTimeFormatOptions = {
 interface LayoutProps {
   content: CoreContent<Blog>
   authorDetails: CoreContent<Authors>[]
+  comments: CommentsProps
   next?: { path: string; title: string }
   prev?: { path: string; title: string }
   children: ReactNode
 }
 
-export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
+export default function PostLayout({ content, comments, authorDetails, next, prev, children }: LayoutProps) {
   const { filePath, path, slug, date, title, tags } = content
   const basePath = path.split('/')[0]
 
@@ -100,11 +103,30 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 {` • `}
                 <Link href={editUrl(filePath)}>View on GitHub</Link>
               </div>
+              
               {siteMetadata.comments && (
+                
                 <div
                   className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 giscus"
                   id="comment"
                 >
+                  <Script 
+    src="https://giscus.app/client.js"
+    data-repo="The-Blockchain-Company/blocksquawk"
+    data-repo-id="R_kgDOLjDLrA"
+    data-category="Blog Comments"
+    data-category-id="DIC_kwDOLjDLrM4ChE_g"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="1"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading="lazy"
+    crossOrigin="anonymous"
+    async
+        />
                   <Comments slug={slug} />
                 </div>
               )}
