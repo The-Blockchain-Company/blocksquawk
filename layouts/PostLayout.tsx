@@ -110,23 +110,7 @@ export default function PostLayout({ content, comments, authorDetails, next, pre
                   className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300 giscus"
                   id="comment"
                 >
-                  <Script 
-    src="https://giscus.app/client.js"
-    data-repo="The-Blockchain-Company/blocksquawk"
-    data-repo-id="R_kgDOLjDLrA"
-    data-category="Blog Comments"
-    data-category-id="DIC_kwDOLjDLrM4ChE_g"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="1"
-    data-input-position="top"
-    data-theme="preferred_color_scheme"
-    data-lang="en"
-    data-loading="lazy"
-    crossOrigin="anonymous"
-    async
-        />
+                 
                   <Comments slug={slug} />
                 </div>
               )}
