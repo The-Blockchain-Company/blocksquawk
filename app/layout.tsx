@@ -80,9 +80,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
                 <Header />
-                <main className="mb-auto">{children}</main>
-              </SearchProvider>
-` <Script 
+                <main className="mb-auto">{children}
+ <Script 
     src="https://giscus.app/client.js"
     data-repo="The-Blockchain-Company/           blocksquawk"
     data-repo-id="R_kgDOLjDLrA"
@@ -98,7 +97,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     data-loading="lazy"
     crossOrigin="anonymous"
     async
-        /> `
+        />
+
+</main>
+              </SearchProvider>
+
             <Footer />
             </div>
           </SectionContainer>
