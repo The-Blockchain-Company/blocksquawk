@@ -1,5 +1,7 @@
 /** @type {import("pliny/config").PlinyConfig } */
-const siteMetadata = {
+import type { Metadata } from 'next' 
+
+export const siteMetadata: Metadata = {
   title: 'Blocksquawk',
   author: 'DFI1',
   headerTitle: 'Blocksquawk',
@@ -93,4 +95,3 @@ const siteMetadata = {
   },
 }
 
-module.exports = siteMetadata
