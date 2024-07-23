@@ -2,7 +2,7 @@
 
 const siteMetadata = {
   title: 'Blocksquawk',
-  author: 'DFI1',
+  author: 'Robert Mourey Jr',
   headerTitle: 'Blocksquawk',
   description: 'Blockchain insights for classical and quantum eras.',
   language: 'en-us',
@@ -12,7 +12,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'inquire@quantumone.io',
+  email: 'inquire@blockchain-company.io',
   github: 'https://github.com/The-Blockchain-Company',
   twitter: 'https://twitter.com/dfione',
   facebook: 'https://facebook.com',
